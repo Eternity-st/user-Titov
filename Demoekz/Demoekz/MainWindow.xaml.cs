@@ -10,6 +10,10 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using Demoekz.sources;
+using Demoekz.pages;
 
 namespace Demoekz
 {
@@ -21,6 +25,16 @@ namespace Demoekz
         public MainWindow()
         {
             InitializeComponent();
+            FrameObj.frameObj = BtnMain;
+            BtnMain.Navigate(new PageClients());
+            
+        }
+
+        private void BackMain_Click(object sender, RoutedEventArgs e)
+        {
+            if (FrameObj.frameObj.CanGoBack) {
+                FrameObj.frameObj.GoBack();
+            }
         }
     }
 }

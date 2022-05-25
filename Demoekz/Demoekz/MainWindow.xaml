@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53"/>
+            <RowDefinition Height="500"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="AliceBlue" Orientation="Horizontal" >
+            <Button x:Name="BackMain" Width="50" Height="20" Margin="700 0 0 0" Click="BackMain_Click" />
+
+        </StackPanel>
+        <Frame x:Name="BtnMain" Grid.Row="1" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

@@ -55,6 +55,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="pages\Pageanother.xaml.cs">
+      <DependentUpon>Pageanother.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\PageFirst.xaml.cs">
+      <DependentUpon>PageFirst.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Pagefive.xaml.cs">
+      <DependentUpon>Pagefive.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Pagefour.xaml.cs">
+      <DependentUpon>Pagefour.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\PageSecond.xaml.cs">
+      <DependentUpon>PageSecond.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Pagethird.xaml.cs">
+      <DependentUpon>Pagethird.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sources\FrameObj.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,8 +86,39 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="pages\Pageanother.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\PageClients.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\PageFirst.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\Pagefive.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\Pagefour.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\PageSecond.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\Pagethird.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pages\PageClients.xaml.cs">
+      <DependentUpon>PageClients.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -94,5 +144,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
